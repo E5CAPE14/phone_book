@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DeleteContactActivity"
+        android:id="@+id/layout_delete_refresh">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+                android:id="@+id/delete_phoneNumber_text"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40sp"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:hint="@string/phone_number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+        <Button
+                android:id="@+id/delete_contact_btn"
+                android:layout_width="200sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/delete_phoneNumber_text"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/delete_contact_btn">
+
+            <TextView
+                    android:id="@+id/delete_contact_info_nickname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="40sp"
+                    android:text=""
+                    android:textSize="40sp"
+                    android:fontFamily="cursive"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:id="@+id/delete_contact_info_phone_text"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="10sp"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:fontFamily="cursive"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:id="@+id/delete_contact_info_age_text"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="10sp"
+                    android:text=""
+                    android:textSize="40sp"
+                    android:fontFamily="cursive"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

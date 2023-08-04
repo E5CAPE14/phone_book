@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Phone book</string>
+    <string name="LOGO">My Phone Book</string>
+    <string name="login">LOGIN</string>
+    <string name="pass">password</string>
+    <string name="contacts">Contacts</string>
+    <string name="delete">Delete</string>
+    <string name="create">create</string>
+    <string name="nickname">nickname</string>
+    <string name="age">age</string>
+    <string name="phone_number">phone_number</string>
+    <string name="info">info</string>
+    <string name="Quests">Tasks</string>
+    <string name="findByPhone">Find by phone</string>
+    <string name="addComment">Add comment</string>
+    <string name="voteSpam">Vote for spam</string>
+    <string name="next">next</string>
+    <string name="find">find</string>
+    <string name="vote">vote</string>
+    <string name="add_comment_contact">Adding a comment to a contact</string>
+    <string name="comment">Comment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.AddContactActivity"
+        android:id="@+id/layout_create_refresh">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+                android:id="@+id/input_nickname"
+                android:layout_width="250sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:hint="@string/nickname"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+        <EditText
+                android:id="@+id/input_phone_number"
+                android:layout_width="250sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:hint="@string/phone_number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_nickname"
+        />
+        <EditText
+                android:id="@+id/input_age"
+                android:layout_width="250sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint="@string/age"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_phone_number"
+        />
+        <Button
+                android:id="@+id/add_contact_btn"
+                android:layout_width="150sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="@string/create"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/input_age"
+        />
+
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

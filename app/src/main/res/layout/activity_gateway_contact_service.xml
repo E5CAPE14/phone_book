@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.GatewayContactService"
+        android:id="@+id/layout_refresh">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+                android:id="@+id/btn_page_linearLayout"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70sp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                    android:text="@string/findByPhone"
+                    android:id="@+id/page_find_by_phone"
+                    android:layout_width="100sp"
+                    android:layout_height="60sp"
+                    android:textSize="15sp"
+                    android:fontFamily="casual"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="7sp">
+            </Button>
+            <Button
+                    android:text="@string/addComment"
+                    android:id="@+id/page_add_comment"
+                    android:layout_width="100sp"
+                    android:layout_height="60sp"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="7sp">
+            </Button>
+            <Button
+                    android:text="@string/voteSpam"
+                    android:id="@+id/page_vote_for_spam"
+                    android:layout_width="100sp"
+                    android:layout_height="60sp"
+                    android:textSize="14sp"
+                    android:fontFamily="casual"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="7sp">
+            </Button>
+        </LinearLayout>
+        <FrameLayout
+                android:id="@+id/fragment_container_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:layout_marginHorizontal="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_page_linearLayout"
+                app:layout_constraintStart_toStartOf="@id/btn_page_linearLayout"
+                app:layout_constraintEnd_toEndOf="@id/btn_page_linearLayout"
+                app:layout_constraintTop_toTopOf="@id/btn_page_linearLayout">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
